@@ -10,6 +10,7 @@ import Awards from "./components/Awards";
 import Languages from "./components/Languages";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ContactForm from "./components/ContactForm";
 
 export default function App() {
   return (
@@ -25,7 +26,9 @@ export default function App() {
       <Awards />
       <Languages />
       <Contact />
+      <ContactForm />
       <Footer />
+      
     </>
   );
 }
