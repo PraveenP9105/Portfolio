@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section id="about" className="py-20">
+    <section id="about" className="py-20 bg-white dark:bg-gray-950 transition-colors">
       <div className="max-w-6xl mx-auto px-6">
         
         <motion.h2
-          className="text-3xl font-bold mb-8"
+          className="text-3xl font-bold mb-8 text-gray-900 dark:text-white"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
@@ -16,7 +16,7 @@ export default function About() {
         </motion.h2>
 
         <motion.p
-          className="text-gray-700 leading-relaxed mb-6"
+          className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 text-lg"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
@@ -30,7 +30,7 @@ export default function About() {
         </motion.p>
 
         <motion.p
-          className="text-gray-700 leading-relaxed mb-6"
+          className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 text-lg"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
@@ -45,7 +45,7 @@ export default function About() {
         </motion.p>
 
         <motion.p
-          className="text-gray-700 leading-relaxed"
+          className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
