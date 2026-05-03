@@ -24,8 +24,8 @@ export default function Hero() {
                         View Projects
                     </a>
                     <a
-                        href="/Praveen_P_Resume.pdf"
-                        download="Praveen_P_Resume.pdf"
+                        href="/Praveen P Resume.pdf"
+                        download="Praveen P Resume.pdf"
                         className="border border-blue-600 text-blue-600 dark:border-blue-400 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 px-6 py-3 rounded-lg transition-all hover:-translate-y-1"
                     >
                         Download Resume
