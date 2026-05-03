@@ -3,6 +3,13 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
   {
+    title: "Personal Portfolio",
+    description: "A modern, interactive portfolio website built with React and Tailwind CSS featuring dark mode and infinite scrolling.",
+    github: "https://github.com/PraveenP9105/Portfolio",
+    demo: "#",
+    demoText: "You're viewing it!",
+  },
+  {
     title: "Jira Clone",
     description: "A full-stack project management tool mirroring Jira's core functionalities. Built with React and Springboot.",
     github: "https://github.com/PraveenP9105/Jira-Clone",
@@ -114,11 +121,11 @@ export default function Projects() {
                 {project.demo && (
                   <a
                     href={project.demo}
-                    target="_blank"
+                    target={project.demo === "#" ? "_self" : "_blank"}
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 px-3 py-2 rounded-lg transition-colors shadow-sm"
                   >
-                    <FaExternalLinkAlt size={14} /> Live Demo
+                    <FaExternalLinkAlt size={14} /> {project.demoText || "Live Demo"}
                   </a>
                 )}
               </div>

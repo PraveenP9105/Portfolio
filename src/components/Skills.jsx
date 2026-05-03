@@ -23,13 +23,13 @@ export default function Skills() {
           transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h3 className="text-lg font-semibold mb-4 text-blue-700 dark:text-blue-400">
+          <h3 className="text-lg font-semibold mb-4 text-blue-600 dark:text-blue-400">
             Programming Languages
           </h3>
           <div className="flex flex-wrap gap-3">
-            <span className="px-4 py-2 bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 rounded-lg shadow-sm font-medium border border-blue-100 dark:border-blue-800">Java</span>
-            <span className="px-4 py-2 bg-yellow-50 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300 rounded-lg shadow-sm font-medium border border-yellow-100 dark:border-yellow-800">Python</span>
-            <span className="px-4 py-2 bg-indigo-50 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 rounded-lg shadow-sm font-medium border border-indigo-100 dark:border-indigo-800">C</span>
+            <span className="px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-800 shadow-sm font-medium rounded-lg transition-all hover:-translate-y-1 hover:shadow-md hover:border-blue-400 dark:hover:border-blue-500">Java</span>
+            <span className="px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-800 shadow-sm font-medium rounded-lg transition-all hover:-translate-y-1 hover:shadow-md hover:border-blue-400 dark:hover:border-blue-500">Python</span>
+            <span className="px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-800 shadow-sm font-medium rounded-lg transition-all hover:-translate-y-1 hover:shadow-md hover:border-blue-400 dark:hover:border-blue-500">C</span>
           </div>
         </motion.div>
 
@@ -41,14 +41,14 @@ export default function Skills() {
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h3 className="text-lg font-semibold mb-4 text-green-700 dark:text-green-400">
+          <h3 className="text-lg font-semibold mb-4 text-emerald-600 dark:text-emerald-400">
             Web & Backend Technologies
           </h3>
           <div className="flex flex-wrap gap-3">
-            <span className="px-4 py-2 bg-green-50 text-green-700 dark:bg-green-900/30 dark:text-green-300 rounded-lg shadow-sm font-medium border border-green-100 dark:border-green-800">Django</span>
-            <span className="px-4 py-2 bg-cyan-50 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-300 rounded-lg shadow-sm font-medium border border-cyan-100 dark:border-cyan-800">React.js</span>
-            <span className="px-4 py-2 bg-green-50 text-green-700 dark:bg-green-900/30 dark:text-green-300 rounded-lg shadow-sm font-medium border border-green-100 dark:border-green-800">Springboot</span>
-            <span className="px-4 py-2 bg-teal-50 text-teal-700 dark:bg-teal-900/30 dark:text-teal-300 rounded-lg shadow-sm font-medium border border-teal-100 dark:border-teal-800">SQL</span>
+            <span className="px-4 py-2 bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800 shadow-sm font-medium rounded-lg transition-all hover:-translate-y-1 hover:shadow-md hover:border-emerald-400 dark:hover:border-emerald-500">Django</span>
+            <span className="px-4 py-2 bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800 shadow-sm font-medium rounded-lg transition-all hover:-translate-y-1 hover:shadow-md hover:border-emerald-400 dark:hover:border-emerald-500">React.js</span>
+            <span className="px-4 py-2 bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800 shadow-sm font-medium rounded-lg transition-all hover:-translate-y-1 hover:shadow-md hover:border-emerald-400 dark:hover:border-emerald-500">Springboot</span>
+            <span className="px-4 py-2 bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800 shadow-sm font-medium rounded-lg transition-all hover:-translate-y-1 hover:shadow-md hover:border-emerald-400 dark:hover:border-emerald-500">SQL</span>
           </div>
         </motion.div>
 
@@ -60,12 +60,12 @@ export default function Skills() {
           transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h3 className="text-lg font-semibold mb-4 text-purple-700 dark:text-purple-400">
+          <h3 className="text-lg font-semibold mb-4 text-amber-600 dark:text-amber-400">
             Data & Analytics Tools
           </h3>
           <div className="flex flex-wrap gap-3">
-            <span className="px-4 py-2 bg-purple-50 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300 rounded-lg shadow-sm font-medium border border-purple-100 dark:border-purple-800">Power BI</span>
-            <span className="px-4 py-2 bg-orange-50 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300 rounded-lg shadow-sm font-medium border border-orange-100 dark:border-orange-800">
+            <span className="px-4 py-2 bg-amber-50 dark:bg-amber-900/20 text-amber-600 dark:text-amber-400 border border-amber-200 dark:border-amber-800 shadow-sm font-medium rounded-lg transition-all hover:-translate-y-1 hover:shadow-md hover:border-amber-400 dark:hover:border-amber-500">Power BI</span>
+            <span className="px-4 py-2 bg-amber-50 dark:bg-amber-900/20 text-amber-600 dark:text-amber-400 border border-amber-200 dark:border-amber-800 shadow-sm font-medium rounded-lg transition-all hover:-translate-y-1 hover:shadow-md hover:border-amber-400 dark:hover:border-amber-500">
               Jupyter Notebook
             </span>
           </div>
@@ -79,15 +79,15 @@ export default function Skills() {
           transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h3 className="text-lg font-semibold mb-4 text-pink-700 dark:text-pink-400">
+          <h3 className="text-lg font-semibold mb-4 text-cyan-600 dark:text-cyan-400">
             Design & Productivity Tools
           </h3>
           <div className="flex flex-wrap gap-3">
-            <span className="px-4 py-2 bg-pink-50 text-pink-700 dark:bg-pink-900/30 dark:text-pink-300 rounded-lg shadow-sm font-medium border border-pink-100 dark:border-pink-800">Figma</span>
-            <span className="px-4 py-2 bg-rose-50 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 rounded-lg shadow-sm font-medium border border-rose-100 dark:border-rose-800">Canva</span>
-            <span className="px-4 py-2 bg-sky-50 text-sky-700 dark:bg-sky-900/30 dark:text-sky-300 rounded-lg shadow-sm font-medium border border-sky-100 dark:border-sky-800">VS Code</span>
-            <span className="px-4 py-2 bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300 rounded-lg shadow-sm font-medium border border-emerald-100 dark:border-emerald-800">Grammarly</span>
-            <span className="px-4 py-2 bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300 rounded-lg shadow-sm font-medium border border-emerald-100 dark:border-emerald-800">QuillBot</span>
+            <span className="px-4 py-2 bg-cyan-50 dark:bg-cyan-900/20 text-cyan-600 dark:text-cyan-400 border border-cyan-200 dark:border-cyan-800 shadow-sm font-medium rounded-lg transition-all hover:-translate-y-1 hover:shadow-md hover:border-cyan-400 dark:hover:border-cyan-500">Figma</span>
+            <span className="px-4 py-2 bg-cyan-50 dark:bg-cyan-900/20 text-cyan-600 dark:text-cyan-400 border border-cyan-200 dark:border-cyan-800 shadow-sm font-medium rounded-lg transition-all hover:-translate-y-1 hover:shadow-md hover:border-cyan-400 dark:hover:border-cyan-500">Canva</span>
+            <span className="px-4 py-2 bg-cyan-50 dark:bg-cyan-900/20 text-cyan-600 dark:text-cyan-400 border border-cyan-200 dark:border-cyan-800 shadow-sm font-medium rounded-lg transition-all hover:-translate-y-1 hover:shadow-md hover:border-cyan-400 dark:hover:border-cyan-500">VS Code</span>
+            <span className="px-4 py-2 bg-cyan-50 dark:bg-cyan-900/20 text-cyan-600 dark:text-cyan-400 border border-cyan-200 dark:border-cyan-800 shadow-sm font-medium rounded-lg transition-all hover:-translate-y-1 hover:shadow-md hover:border-cyan-400 dark:hover:border-cyan-500">Grammarly</span>
+            <span className="px-4 py-2 bg-cyan-50 dark:bg-cyan-900/20 text-cyan-600 dark:text-cyan-400 border border-cyan-200 dark:border-cyan-800 shadow-sm font-medium rounded-lg transition-all hover:-translate-y-1 hover:shadow-md hover:border-cyan-400 dark:hover:border-cyan-500">QuillBot</span>
           </div>
         </motion.div>
 
@@ -98,26 +98,26 @@ export default function Skills() {
           transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h3 className="text-lg font-semibold mb-4 text-violet-700 dark:text-violet-400">
+          <h3 className="text-lg font-semibold mb-4 text-teal-600 dark:text-teal-400">
             Core Competencies
           </h3>
           <div className="flex flex-wrap gap-3">
-            <span className="px-4 py-2 bg-violet-50 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300 rounded-lg shadow-sm font-medium border border-violet-100 dark:border-violet-800">
+            <span className="px-4 py-2 bg-teal-50 dark:bg-teal-900/20 text-teal-600 dark:text-teal-400 border border-teal-200 dark:border-teal-800 shadow-sm font-medium rounded-lg transition-all hover:-translate-y-1 hover:shadow-md hover:border-teal-400 dark:hover:border-teal-500">
               Logical Thinking
             </span>
-            <span className="px-4 py-2 bg-violet-50 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300 rounded-lg shadow-sm font-medium border border-violet-100 dark:border-violet-800">
+            <span className="px-4 py-2 bg-teal-50 dark:bg-teal-900/20 text-teal-600 dark:text-teal-400 border border-teal-200 dark:border-teal-800 shadow-sm font-medium rounded-lg transition-all hover:-translate-y-1 hover:shadow-md hover:border-teal-400 dark:hover:border-teal-500">
               Problem Solving
             </span>
-            <span className="px-4 py-2 bg-violet-50 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300 rounded-lg shadow-sm font-medium border border-violet-100 dark:border-violet-800">
+            <span className="px-4 py-2 bg-teal-50 dark:bg-teal-900/20 text-teal-600 dark:text-teal-400 border border-teal-200 dark:border-teal-800 shadow-sm font-medium rounded-lg transition-all hover:-translate-y-1 hover:shadow-md hover:border-teal-400 dark:hover:border-teal-500">
               Backend Development
             </span>
-            <span className="px-4 py-2 bg-violet-50 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300 rounded-lg shadow-sm font-medium border border-violet-100 dark:border-violet-800">
+            <span className="px-4 py-2 bg-teal-50 dark:bg-teal-900/20 text-teal-600 dark:text-teal-400 border border-teal-200 dark:border-teal-800 shadow-sm font-medium rounded-lg transition-all hover:-translate-y-1 hover:shadow-md hover:border-teal-400 dark:hover:border-teal-500">
               Data Analysis
             </span>
-            <span className="px-4 py-2 bg-violet-50 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300 rounded-lg shadow-sm font-medium border border-violet-100 dark:border-violet-800">
+            <span className="px-4 py-2 bg-teal-50 dark:bg-teal-900/20 text-teal-600 dark:text-teal-400 border border-teal-200 dark:border-teal-800 shadow-sm font-medium rounded-lg transition-all hover:-translate-y-1 hover:shadow-md hover:border-teal-400 dark:hover:border-teal-500">
               UI/UX Designing
             </span>
-            <span className="px-4 py-2 bg-violet-50 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300 rounded-lg shadow-sm font-medium border border-violet-100 dark:border-violet-800">
+            <span className="px-4 py-2 bg-teal-50 dark:bg-teal-900/20 text-teal-600 dark:text-teal-400 border border-teal-200 dark:border-teal-800 shadow-sm font-medium rounded-lg transition-all hover:-translate-y-1 hover:shadow-md hover:border-teal-400 dark:hover:border-teal-500">
               Content Creation
             </span>
           </div>
