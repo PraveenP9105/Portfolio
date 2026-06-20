@@ -4,7 +4,7 @@ A modern, responsive, and highly interactive personal portfolio website built to
 
 ![Portfolio Preview](./public/vite.svg)
 
-**Live Demo:** [Praveen's Portfolio](https://praveen-p-portfolio.vercel.app/) *(Update this link to your actual deployment URL)*
+**Live Demo:** [Praveen's Portfolio](https://praveen-p-portfolio.vercel.app/)
 
 ## ✨ Features
 
@@ -66,9 +66,6 @@ To activate it for your email:
 3. Check your email inbox and click the **Activate** button in the email sent by FormSubmit. 
 4. The form is now fully functional and will route all future messages to your inbox.
 
-## 📝 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 🔗 Connect with Me
 
