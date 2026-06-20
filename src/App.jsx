@@ -14,6 +14,7 @@ import Languages from "./components/Languages";
 import Contact from "./components/Contact";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   return (
@@ -41,6 +42,8 @@ export default function App() {
           <ContactForm />
           <Footer />
         </main>
+        
+        <Analytics />
       </div>
     </ThemeProvider>
   );
