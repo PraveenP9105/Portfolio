@@ -1,88 +1,125 @@
 import { motion } from "framer-motion";
+import SectionTitle from "./ui/SectionTitle";
+
+const degrees = [
+  {
+    level: "BE",
+    title: "Bachelor of Engineering – Computer Science and Engineering",
+    institution: "Knowledge Institute of Technology, Salem",
+    duration: "November 2022 – March 2026",
+    score: "Percentage: 83%",
+    accentColor: "#38BDF8",
+    icon: "🎓",
+  },
+  {
+    level: "HSC",
+    title: "Higher Secondary Certificate (HSC)",
+    institution: "Sengunthar Matric Higher Secondary School, Tharamangalam",
+    duration: "Year: 2022",
+    score: "Percentage: 87%",
+    accentColor: "#34D399",
+    icon: "📚",
+  },
+  {
+    level: "SSLC",
+    title: "Secondary School Leaving Certificate (SSLC)",
+    institution: "Sengunthar Matric Higher Secondary School, Tharamangalam",
+    duration: "Year: 2020",
+    score: "Percentage: 95%",
+    accentColor: "#F59E0B",
+    icon: "🏫",
+  },
+];
 
 export default function Education() {
   return (
-    <section id="education" className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="education" className="py-24 px-6">
+      <div className="max-w-6xl mx-auto">
+        <SectionTitle
+          category="◈ ACADEMY"
+          title="Education"
+          gradient="green"
+        />
 
-        <motion.h2
-          className="text-3xl font-bold mb-10 text-gray-900 dark:text-white"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: true }}
-        >
-          Education
-        </motion.h2>
+        <div className="space-y-5">
+          {degrees.map((deg, i) => (
+            <motion.div
+              key={deg.level}
+              className="relative flex gap-5 group"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: i * 0.12, ease: "easeOut" }}
+            >
+              {/* Timeline */}
+              <div className="flex flex-col items-center flex-shrink-0">
+                <div
+                  className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-black z-10 flex-shrink-0"
+                  style={{
+                    background: `${deg.accentColor}18`,
+                    border: `2px solid ${deg.accentColor}50`,
+                    color: deg.accentColor,
+                    boxShadow: `0 0 16px ${deg.accentColor}30`,
+                  }}
+                >
+                  {deg.level === "BE" ? "BE" : deg.level}
+                </div>
+                {i < degrees.length - 1 && (
+                  <div
+                    className="w-px flex-1 mt-2"
+                    style={{
+                      background: `linear-gradient(180deg, ${deg.accentColor}50, ${degrees[i + 1].accentColor}20)`,
+                      minHeight: "24px",
+                    }}
+                  />
+                )}
+              </div>
 
-        <div className="space-y-8">
-          {/* BE – CSE */}
-          <motion.div
-            className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm dark:shadow-gray-900 border-l-4 border-blue-500"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-xl font-bold text-blue-700 dark:text-blue-400 mb-2">
-              Bachelor of Engineering – Computer Science and Engineering
-            </h3>
-            <p className="text-gray-800 dark:text-gray-200 font-medium mb-2">
-              Knowledge Institute of Technology, Salem
-            </p>
-            <p className="text-gray-700 dark:text-gray-400 text-sm mb-3">
-              Duration: November 2022 – March 2026
-            </p>
-            <p className="inline-block bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-semibold px-3 py-1 rounded-md text-sm border border-blue-100 dark:border-blue-800">
-              CGPA: 8.29
-            </p>
-          </motion.div>
+              {/* Card */}
+              <div
+                className="flex-1 mb-2 p-6 rounded-2xl relative overflow-hidden transition-all duration-300 glass-panel"
+                style={{
+                  borderLeft: `3px solid ${deg.accentColor}`,
+                  boxShadow: `0 4px 20px rgba(0,0,0,0.3)`,
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.boxShadow = `0 8px 32px rgba(0,0,0,0.4), -4px 0 20px ${deg.accentColor}20`;
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.boxShadow = `0 4px 20px rgba(0,0,0,0.3)`;
+                }}
+              >
+                {/* Inner glow */}
+                <div
+                  className="absolute inset-0 pointer-events-none rounded-2xl"
+                  style={{
+                    background: `radial-gradient(ellipse at top left, ${deg.accentColor}06, transparent 60%)`,
+                  }}
+                />
 
-          {/* HSC */}
-          <motion.div
-            className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm dark:shadow-gray-900 border-l-4 border-emerald-500"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-xl font-bold text-emerald-700 dark:text-emerald-400 mb-2">
-              Higher Secondary Certificate (HSC)
-            </h3>
-            <p className="text-gray-800 dark:text-gray-200 font-medium mb-2">
-              Sengunthar Matric Higher Secondary School, Tharamangalam
-            </p>
-            <p className="text-gray-700 dark:text-gray-400 text-sm mb-3">
-              Year: 2022
-            </p>
-            <p className="inline-block bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 font-semibold px-3 py-1 rounded-md text-sm border border-emerald-100 dark:border-emerald-800">
-              Percentage: 87%
-            </p>
-          </motion.div>
-
-          {/* SSLC */}
-          <motion.div
-            className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm dark:shadow-gray-900 border-l-4 border-amber-500"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-xl font-bold text-amber-700 dark:text-amber-400 mb-2">
-              Secondary School Leaving Certificate (SSLC)
-            </h3>
-            <p className="text-gray-800 dark:text-gray-200 font-medium mb-2">
-              Sengunthar Matric Higher Secondary School, Tharamangalam
-            </p>
-            <p className="text-gray-700 dark:text-gray-400 text-sm mb-3">
-              Year: 2020
-            </p>
-            <p className="inline-block bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 font-semibold px-3 py-1 rounded-md text-sm border border-amber-100 dark:border-amber-800">
-              Percentage: 95%
-            </p>
-          </motion.div>
+                <div className="relative z-10 flex flex-wrap items-start justify-between gap-3">
+                  <div>
+                    <h3 className="font-bold text-base text-white mb-1 flex items-center gap-2">
+                      <span>{deg.icon}</span> {deg.title}
+                    </h3>
+                    <p className="text-sm font-semibold text-slate-300 mb-1">{deg.institution}</p>
+                    <p className="text-sm text-slate-500">{deg.duration}</p>
+                  </div>
+                  <span
+                    className="text-sm font-bold px-4 py-1.5 rounded-full flex-shrink-0 self-start"
+                    style={{
+                      background: `${deg.accentColor}15`,
+                      border: `1px solid ${deg.accentColor}40`,
+                      color: deg.accentColor,
+                    }}
+                  >
+                    {deg.score}
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+          ))}
         </div>
-
       </div>
     </section>
   );

@@ -4,12 +4,39 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05070D" />
+    <meta name="description" content="Praveen P — Software Developer specializing in Java, React, Springboot, and AI-driven solutions. CSE undergraduate at Knowledge Institute of Technology, Salem." />
+    <meta name="keywords" content="Praveen P, Software Developer, Java, React, Springboot, Python, Django, Portfolio, Salem" />
+    <meta property="og:title" content="Praveen P | Premium Developer Portfolio" />
+    <meta property="og:description" content="Full-stack developer building premium digital experiences with React, Java & AI." />
+    <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Praveen P | Portfolio</title>
+    <!-- Inline theme script: runs synchronously before any CSS/React so there is ZERO flash -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia
+            ? window.matchMedia('(prefers-color-scheme: dark)').matches
+            : true;
+          var isDark = saved === 'dark' || (saved === null && prefersDark);
+          if (saved === 'light') isDark = false;
+          document.documentElement.classList.add(isDark ? 'dark' : 'light');
+          // Set bg colour immediately so over-scroll bounce areas match the theme
+          document.documentElement.style.backgroundColor = isDark ? '#05070D' : '#F0F4FF';
+          document.body.style.backgroundColor = isDark ? '#05070D' : '#F0F4FF';
+        } catch (e) {
+          document.documentElement.classList.add('dark');
+          document.documentElement.style.backgroundColor = '#05070D';
+        }
+      })();
+    </script>
   </head>
   <body>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

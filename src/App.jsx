@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
-import Navbar from "./components/Navbar";
+import { ThemeProvider } from "./contexts/ThemeContext";
+import GlowBackground from "./components/ui/GlowBackground";
+import FloatingNavbar from "./components/ui/FloatingNavbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Education from "./components/Education";
@@ -11,47 +12,36 @@ import Achievements from "./components/Achievements";
 import Awards from "./components/Awards";
 import Languages from "./components/Languages";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
 export default function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    const isDark = localStorage.getItem("darkMode") === "true";
-    setDarkMode(isDark);
-    if (isDark) {
-      document.documentElement.classList.add("dark");
-    }
-  }, []);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    if (!darkMode) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("darkMode", "true");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("darkMode", "false");
-    }
-  };
-
   return (
-    <div className="min-h-screen transition-colors duration-300">
-      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <Hero />
-      <About />
-      <Education />
-      <Skills />
-      <Projects />
-      <Internships />
-      <Certifications />
-      <Achievements />
-      <Awards />
-      <Languages />
-      <Contact />
-      <ContactForm />
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="min-h-screen relative">
+        {/* Fixed ambient background */}
+        <GlowBackground />
+
+        {/* Floating navigation */}
+        <FloatingNavbar />
+
+        {/* Page content */}
+        <main className="relative z-10">
+          <Hero />
+          <About />
+          <Education />
+          <Skills />
+          <Projects />
+          <Internships />
+          <Certifications />
+          <Achievements />
+          <Awards />
+          <Languages />
+          <Contact />
+          <ContactForm />
+          <Footer />
+        </main>
+      </div>
+    </ThemeProvider>
   );
 }
